@@ -12,6 +12,9 @@ public class Bejegyzes {
     public Bejegyzes(String szerzo, String tartalom) {
         this.szerzo = szerzo;
         this.tartalom = tartalom;
+        this.likeok = 0;
+        this.letrejott = letrejott;
+        this.szerkesztve = szerkesztve;
     }
 
     public String getSzerzo() {
@@ -34,10 +37,19 @@ public class Bejegyzes {
         return szerkesztve;
     }
 
-    private void like() {
-        this.like();
-        //TODO Későbbi munkára létrehozva
+    public void setTartalom(String tartalom) {
+        this.tartalom = tartalom;
     }
 
+    public void like() {
+        this.like();
+    }
+
+
+
+    @Override
+    public String toString(){
+
+    }
 
 }
