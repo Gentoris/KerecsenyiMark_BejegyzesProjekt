@@ -24,9 +24,9 @@ public class Main {
         try {
             bejegyzesekFelveteleSzovegesAllomanybol(fajlNev);
         } catch (FileNotFoundException e) {
-            System.out.println("Hiba! nem található az alábbi fájl: " + fajlNev);
+            System.out.println("ERROR! This file does not exists: " + fajlNev);
         } catch (IOException e) {
-            System.out.println("Ismeretlen hiba történt a forrásfájl olvasása során");
+            System.out.println("Unknown error");
             System.out.println(e.getMessage());
         }
 
@@ -70,4 +70,6 @@ public class Main {
         bejegyzesek.add(bejegyzes1);
         bejegyzesek.add(bejegyzesek2);// write your code here
     }
+
 }
+

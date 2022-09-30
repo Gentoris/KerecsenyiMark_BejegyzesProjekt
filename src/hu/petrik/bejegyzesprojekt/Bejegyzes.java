@@ -3,6 +3,7 @@ package hu.petrik.bejegyzesprojekt;
 import java.time.LocalDateTime;
 
 public class Bejegyzes {
+
     private String szerzo;
     private String tartalom;
     private int likeok;
@@ -42,14 +43,20 @@ public class Bejegyzes {
     }
 
     public void like() {
-        this.like();
+        likeok += 1;
     }
-
-
 
     @Override
-    public String toString(){
-
+    public String toString() {
+        return "Bejegyzes{" +
+                "szerzo='" + szerzo + '\'' +
+                ", tartalom='" + tartalom + '\'' +
+                ", likeok=" + likeok +
+                ", letrejott=" + letrejott +
+                ", szerkesztve=" + szerkesztve +
+                '}';
     }
+
+
 
 }
